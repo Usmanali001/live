@@ -1,6 +1,6 @@
 name: Deploy Website
 
-on: push
+on: [push]
 
 jobs:
   build:
@@ -12,7 +12,7 @@ jobs:
     - name: Install NodeJS
       uses: actions/setup-node@v2-beta
       with:
-        node-version: 18.12.1
+        node-version: 12
           
           
     - uses: borales/actions-yarn@v2.0.0
@@ -26,6 +26,6 @@ jobs:
       run: npm install --global surge
      
     - name: Deploy to surge
-      run: surge ./build usmanali001.us.surge.sh --token ${{secrets.SURGE_TOKEN}}
+      run: surge ./build usmanali0011234.surge.sh --token ${{secrets.SURGE_TOKEN}}
 
 
