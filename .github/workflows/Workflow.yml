@@ -1,6 +1,6 @@
 name: Deploy Website
 
-on: [main]
+on: [master]
 
 jobs:
   build:
