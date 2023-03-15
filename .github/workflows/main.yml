@@ -23,7 +23,7 @@ jobs:
       run: sudo yarn build
      
     - name: Install surge
-      run: yarn add --global surge --ignore-engines
+      run: npm install --global surge 
      
     - name: Deploy to surge
       run: surge ./build usmanali0011234.surge.sh --token ${{secrets.SURGE_TOKEN}}
