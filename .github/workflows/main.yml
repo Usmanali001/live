@@ -15,7 +15,7 @@ jobs:
         node-version: 16
           
           
-    - uses: borales/actions-npm@v2.0.0
+    - uses: borales/actions-yarn@v2.0.0
       with:
         cmd: npm install # will run `yarn install` command   
           
